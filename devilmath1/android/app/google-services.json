@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "713405357856",
+    "project_id": "devilmath1-f007e",
+    "storage_bucket": "devilmath1-f007e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713405357856:android:ce07bb14c3aa82080fc145",
+        "android_client_info": {
+          "package_name": "com.example.devilmath1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGFc4W-X8PXmC-u4XCk6h6urE7dAWPLqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
