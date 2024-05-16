@@ -433,7 +433,6 @@ class Score extends StatelessWidget {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
-        // Geri tuşuna basıldığında true döndürerek geri gitmeyi engelle
         return false;
       },
       child: Scaffold(
@@ -512,8 +511,8 @@ class _TutorialScreenState extends State<TutorialScreen> {
       theme: ThemeData(
         floatingActionButtonTheme: FloatingActionButtonThemeData(
           backgroundColor:
-              Colors.white, // FloatingActionButton'ın arkaplan rengi
-          elevation: 8.0, // Gölge efekti
+              Colors.white,
+          elevation: 8.0,
         ),
       ),
       home: Scaffold(
@@ -635,7 +634,6 @@ class _SecondTutorialState extends State<SecondTutorial> {
   }
 
   bool isNumeric(String s) {
-    // ignore: unnecessary_null_comparison
     if (s == null) {
       return false;
     }
@@ -645,14 +643,13 @@ class _SecondTutorialState extends State<SecondTutorial> {
   List<dynamic> _generateRandomExpression() {
     final
  random = Random();
-    // ignore: unused_local_variable
+    
     double difference = 0;
 
     final numbers = List.generate(
         5, (index) => random.nextInt(10)); // 0 ile 9 arasında rastgele sayılar
     final operators = ['+', '-', '*', '/'];
 
-    // Sayıları ve operatörleri birleştir
     final result = <dynamic>[];
     for (var i = 0; i < numbers.length; i++) {
       result.add(numbers[i]);
@@ -789,7 +786,6 @@ class _SecondTutorialState extends State<SecondTutorial> {
       double difference = (widget.randomNum - result).abs();
       int points = calculatePoints(difference);
 
-      // Modal Bottom Sheet'i göster
       showModalBottomSheet(
         context: context,
         builder: (BuildContext context) {
